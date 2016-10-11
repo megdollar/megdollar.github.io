@@ -239,10 +239,26 @@ span {
     margin-top: 10%;
   }
   .biopic {
-    width: 150px;
+    display: block;
+    max-width: 50%;
+  }
+    #skills {
+    margin-top: 20px;
   }
   .welcome-message {
     display: none;
+  }
+  .project-entry {
+    width: 100%;
+  }
+  #map {
+    display: none;
+  }
+  #mapDiv {
+    display: none;
+  }
+  .role {
+    display: flex; 
   }
 }
 
