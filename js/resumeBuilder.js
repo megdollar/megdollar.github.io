@@ -128,7 +128,7 @@ var projects = {
       "description": "Responsive Portfolio Project: Single page responsive site showcasing HTML, CSS, & Bootstrap.",
       "dates": "August, 2016",
       "images" : ["images/portfolio.jpg"],
-      "view"  : "https://megdollar.github.io/Animal-Trading-Card/",
+      "view"  : "https://megdollar.github.io/portfolio/",
       "github": "https://github.com/megdollar/portfolio"
     }, {
       "title": "Classic Arcade Game",
