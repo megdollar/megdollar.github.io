@@ -141,7 +141,7 @@ var projects = {
       "title": "Website Optimzation",
       "description": "Coming soon",
       "dates": "November, 2016",
-      "images" : ["http://lorempixel.com/300/300"],
+      "images" : ["https://lorempixel.com/300/300"],
       "view" : "link", 
       "github": "link"
     }]
