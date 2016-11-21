@@ -120,23 +120,23 @@ var projects = {
       "title": "Animal Trading Card", 
       "description": "First CSS Project: Animal trading card created to showcase HTML & CSS.",
       "dates": "June, 2016",
-      "images" : ["images/animal.jpg"],
+      "images" : ["images/lorikeet.jpeg"],
       "view" : "https://megdollar.github.io/Animal-Trading-Card/",
       "github": "https://github.com/megdollar/Animal-Trading-Card"
     }, {
       "title": "Portfolio",
       "description": "Responsive Portfolio Project: Single page responsive site showcasing HTML, CSS, & Bootstrap.",
       "dates": "August, 2016",
-      "images" : ["images/portfolio.jpg"],
+      "images" : ["images/portfolio.png"],
       "view"  : "https://megdollar.github.io/portfolio/",
       "github": "https://github.com/megdollar/portfolio"
     }, {
       "title": "Classic Arcade Game",
       "description": "Object-oriented JavaScript Game: A new twist on the classic arcade game Frogger.",
       "dates": "October, 2016",
-      "images" : ["http://lorempixel.com/300/300"],
-      "view"  : "link",
-      "github": "link"
+      "images" : ["images/arcade.png"],
+      "view"  : "https://megdollar.github.io/Arcade_Game",
+      "github": "https://github.com/megdollar/Arcade_Game"
    }, {
       "title": "Website Optimzation",
       "description": "Coming soon",
