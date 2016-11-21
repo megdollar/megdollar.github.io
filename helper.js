@@ -13,15 +13,15 @@ These are HTML strings. As part of the course, you'll be using JavaScript functi
 replace the %data% placeholder text you see in them.
 */
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<span>%data%</span><hr>';
+var HTMLheaderRole = '<span class="tagline">%data%</span><hr>';
 
-var HTMLcontactGeneric = '<li class="flex-item nav"><span class="blue-text nav">%contact%</span><span class="blue-text nav">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><span class="blue-text" hidden>mobile</span><span class="blue-text nav">%data%</span></li>';
-var HTMLemail = '<li class="flex-item"><span class="blue-text" hidden>email</span><a span class="blue-text nav" href="mailto:#">%data%</span></li>';
-var HTMLlinkedin = '<li class="flex-item"><a span class="blue-text nav" href="#">linkedin</span></li>';
-var HTMLgithub = '<li class="flex-item"><a span class="blue-text nav" href="#">github</span></li>';
-var HTMLblog = '<li class="flex-item"><span class="blue-text">blog</span><span class="blue-text">%data%</span></li>';
-var HTMLlocation = '<li class="flex-item nav"><span class="blue-text" hidden>location</span><span class="blue-text nav">%data%</span></li>';
+var HTMLcontactGeneric = '<li class="flex-item headnav"><span class="blue-text headnav">%contact%</span><span class="blue-text headnav">%data%</span></li>';
+var HTMLmobile = '<li class="flex-item"><span class="blue-text" hidden>mobile</span><span class="blue-text headnav">%data%</span></li>';
+var HTMLemail = '<li class="flex-item"><span class="blue-text" hidden>email</span><a span class="blue-text headnav" href="mailto:#">%data%</span></li>';
+var HTMLlinkedin = '<li class="flex-item"><a span class="blue-text headnav" href="#">linkedin</span></li>';
+var HTMLgithub = '<li class="flex-item"><a span class="blue-text headnav" href="#">github</span></li>';
+var HTMLblog = '<li class="flex-item tech"><span class="blue-text">blog</span><span class="blue-text">%data%</span></li>';
+var HTMLlocation = '<li class="flex-item headnav"><span class="blue-text" hidden>location</span><span class="blue-text headnav">%data%</span></li>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
@@ -31,10 +31,10 @@ var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
 var HTMLprojectTitle = '<a class="aqua-text example" href="#">%data%</a>';
-var HTMLprojectDates = '<div class="date-text example">%data%</div>';
+var HTMLprojectDates = '<div class="project-text example">%data%</div>';
 var HTMLprojectDescription = '<p class="example"><br>%data%</p>';
-var HTMLprojectImage = '<img class="example" src="%data%">';
-var HTMLprojectGithub = '<a class="example" btn btn-default btn-sm" href="#" role="button">GitHub</a>';
+var HTMLprojectImage = '<img class="project-image" src="%data%">';
+var HTMLprojectGithub = '<a class="example btn btn-default btn-sm" href="#" role="button">GitHub</a>';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';

@@ -10,7 +10,7 @@ var bio = {
       "location": "Decatur, GA",
   },
   "biopic": "images/megan.jpg",
-  "welcomeMessage": "Experienced manager with one year of programming and front-end course-work.",
+  "welcomeMessage": "Experienced manager with two years of programming and front-end course-work.",
   "skills": ["HTML", "CSS", "JavaScript", "Front-End Web Development", "jQuery", "Git & GitHub", "Object-Oriented Programming"]
 };
 
@@ -124,13 +124,13 @@ var projects = {
       "github": "https://github.com/megdollar/Animal-Trading-Card"
     }, {
       "title": "Portfolio",
-      "description": "Responsive Portfolio Project: Single page responsive site showcasing HTML, CSS, & Bootstrap. Future and current projects linked via GitHub.",
+      "description": "Responsive Portfolio Project: Single page responsive site showcasing HTML, CSS, & Bootstrap.",
       "dates": "August, 2016",
       "images" : ["images/portfolio.jpg"],
       "github": "https://github.com/megdollar/portfolio"
     }, {
       "title": "Classic Arcade Game",
-      "description": "Coming soon: Object-oriented JavaScript Game: A new twist on the classic arcade game Frogger.",
+      "description": "Object-oriented JavaScript Game: A new twist on the classic arcade game Frogger.",
       "dates": "October, 2016",
       "images" : ["http://lorempixel.com/300/300"],
       "github": "link"
@@ -226,3 +226,21 @@ $('#main').append(internationalizeButton);
 
 //adds a map with work history
 $("#mapDiv").append(googleMap);
+
+
+/*
+* Open the drawer when the menu ison is clicked
+*/
+var menu = document.querySelector('#menu');
+var main = document.querySelector('main');
+var drawer = document.querySelector('.nav');
+
+menu.addEventListener('click', function(e) {
+   drawer.classList.toggle('open');
+   e.stopPropagation();
+});
+main.addEventListener('click', function() {
+  drawer.classList.remove('open');
+});
+
+
