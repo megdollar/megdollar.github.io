@@ -38,7 +38,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <!--
   Uncomment the <script> tag below when you're ready to add an interactive Google Map to your resume!
   -->
-<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyD7BoOTw1D-lw_TuXiDEOmzfilJknmqtVU"></script>
+<script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
@@ -54,7 +54,19 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     -->
     <div id="header" class="center-content clear-fix">
       <ul id="topContacts" class="flex-box"></ul>
+      <a id="menu" class="header__menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+      </svg>
     </div>
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">Education</a></li>
+        <li class="nav__item"><a href="#">Projects</a></li>
+        <li class="nav__item"><a href="#">Work Experience</a></li>
+        <li class="nav__item"><a href="#">Where I've Lived and Worked</a></li>
+      </ul>
+    </nav>
     <div style="clear: both;"></div>
     <div id="education" class="aqua">
       <h2>Education</h2>
