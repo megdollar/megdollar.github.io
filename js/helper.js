@@ -30,10 +30,11 @@ var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills
 var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLprojectTitle = '<a class="aqua-text example" href="#">%data%</a>';
+var HTMLprojectTitle = '<div class="aqua-text example" href="#">%data%</div>';
 var HTMLprojectDates = '<div class="project-text example">%data%</div>';
 var HTMLprojectDescription = '<p class="example"><br>%data%</p>';
 var HTMLprojectImage = '<img class="project-image" src="%data%">';
+var HTMLprojectView = '<a class="example btn btn-default btn-sm" href="#" role="button">View</a>';
 var HTMLprojectGithub = '<a class="example btn btn-default btn-sm" href="#" role="button">GitHub</a>';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
