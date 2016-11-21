@@ -117,28 +117,32 @@ education.display();
 var projects = {
   "projects": [
     {
-      "title": "Animal Trading Card",
+      "title": "Animal Trading Card", 
       "description": "First CSS Project: Animal trading card created to showcase HTML & CSS.",
       "dates": "June, 2016",
       "images" : ["images/animal.jpg"],
+      "view" : "https://megdollar.github.io/Animal-Trading-Card/",
       "github": "https://github.com/megdollar/Animal-Trading-Card"
     }, {
       "title": "Portfolio",
       "description": "Responsive Portfolio Project: Single page responsive site showcasing HTML, CSS, & Bootstrap.",
       "dates": "August, 2016",
       "images" : ["images/portfolio.jpg"],
+      "view"  : "https:megdollar.github.io/portfolio/",
       "github": "https://github.com/megdollar/portfolio"
     }, {
       "title": "Classic Arcade Game",
       "description": "Object-oriented JavaScript Game: A new twist on the classic arcade game Frogger.",
       "dates": "October, 2016",
       "images" : ["http://lorempixel.com/300/300"],
+      "view"  : "link",
       "github": "link"
    }, {
       "title": "Website Optimzation",
       "description": "Coming soon",
       "dates": "November, 2016",
       "images" : ["http://lorempixel.com/300/300"],
+      "view" : "link", 
       "github": "link"
     }]
 };
@@ -153,6 +157,7 @@ projects.display = function() {
     $(".project-entry:last").append(HTMLprojectDescription.replace(data, projects.projects[i].description));
     $(".project-entry:last").append(HTMLprojectDates.replace(data, projects.projects[i].dates));
     $(".project-entry:last").append(HTMLprojectImage.replace(data, projects.projects[i].images));
+    $(".project-entry:last").append(HTMLprojectView.replace("#",projects.projects[i].view).replace(data, projects.projects[i].view));
     $(".project-entry:last").append(HTMLprojectGithub.replace("#",projects.projects[i].github).replace(data, projects.projects[i].github));
 
 
