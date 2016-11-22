@@ -1,6 +1,6 @@
 # Resume
 
-This is a responsive resume I created to showcase my projectx, work experience, education, and design concepts.
+This is a responsive resume I created to showcase my projects, work experience, education, and design concepts.
 
 ##Getting Started
 
