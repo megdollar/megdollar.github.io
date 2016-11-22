@@ -304,7 +304,7 @@ span {
   }
 }
 
-@media only screen and (max-width: 749px) {
+@media only screen and (max-width: 650px) {
   #lets-connect {
     margin-top: 10%;
   }
@@ -321,12 +321,13 @@ span {
     z-index: 10;
     background-color: #fff;
     width: 300px;
-    position: absolute;
+    position: fixed;
     /* This trasform moves the drawer off canvas. */
     -webkit-transform: translate(-300px, 0);
     transform: translate(-300px, 0);
     /* Optionally, we animate the drawer. */
     transition: transform 0.3s ease;
+    top: 0px;
   }
   .nav.open {
     -webkit-transform: translate(0, 0);
