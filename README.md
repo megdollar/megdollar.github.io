@@ -8,14 +8,14 @@ Go to [megan's resume](https://megdollar.github.io) to view the site
 
 ##Built With
 
-HTML
-CSS
-JavaScript
+*HTML
+*CSS
+*JavaScript
 
 ##Authors
 
-Megan Dollar
-Udacity
+*Megan Dollar 
+*[Udacity](https://github.com/udacity/frontend-nanodegree-resume)
 
 
 
