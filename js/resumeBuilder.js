@@ -138,12 +138,12 @@ var projects = {
       "view"  : "https://megdollar.github.io/Arcade_Game",
       "github": "https://github.com/megdollar/Arcade_Game"
    }, {
-      "title": "Website Optimzation",
-      "description": "Coming soon",
+      "title": "Website Perfomance Optimzation",
+      "description": "Optimized the index and pizzeria for performace perfection",
       "dates": "November, 2016",
-      "images" : ["http://lorempixel.com/300/300"],
-      "view" : "link", 
-      "github": "link"
+      "images" : ["images/pizza.png"],
+      "view" : "https://megdollar.github.io/Pizzeria_portfolio/", 
+      "github": "https://github.com/megdollar/Pizzeria_portfolio"
     }]
 };
 
@@ -237,7 +237,7 @@ $("#mapDiv").append(googleMap);
 * Open the drawer when the menu ison is clicked
 */
 var menu = document.querySelector('#menu');
-var main = document.querySelector('main');
+var main = document.querySelector('#main');
 var drawer = document.querySelector('.nav');
 
 menu.addEventListener('click', function(e) {
