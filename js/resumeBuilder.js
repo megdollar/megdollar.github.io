@@ -11,7 +11,7 @@ var bio = {
   },
   "biopic": "images/megan.jpg",
   "welcomeMessage": "Experienced manager with two years of programming and front-end course-work.",
-  "skills": ["HTML", "CSS", "JavaScript", "Front-End Web Development", "jQuery", "Git & GitHub", "Object-Oriented Programming"]
+  "skills": ["HTML", "CSS", "JavaScript", "Front-End Web Development", "jQuery", "Git & GitHub", "Object-Oriented Programming", "Knockout", "Google Maps API"]
 };
 
 //create a function to display bio
@@ -117,12 +117,12 @@ education.display();
 var projects = {
   "projects": [
     {
-      "title": "Animal Trading Card", 
-      "description": "First CSS Project: Animal trading card created to showcase HTML & CSS.",
-      "dates": "June, 2016",
-      "images" : ["images/lorikeet.jpeg"],
-      "view" : "https://megdollar.github.io/Animal-Trading-Card/",
-      "github": "https://github.com/megdollar/Animal-Trading-Card"
+      "title": "Neighborhood Map", 
+      "description": "Utilized MVVM framework with Knockout to separate concerns and dynamically update UI",
+      "dates": "January, 2017",
+      "images" : ["images/neighborhood.png"],
+      "view" : "https://megdollar.github.io/Neighborhood_Map/",
+      "github": "https://github.com/megdollar/Neighborhood_Map"
     }, {
       "title": "Portfolio",
       "description": "Responsive Portfolio Project: Single page responsive site showcasing HTML, CSS, & Bootstrap.",
@@ -171,7 +171,7 @@ var work = {
     "employer": "Swarovski",
     "title": "Store Manager",
     "location": "Atlanta, GA",
-    "dates": "July 2014 - Present",
+    "dates": "July 2014 - November, 2016",
     "description": "Build and maintain client relations daily by providing top notch service and utilizing clientele system. " + "Identify and resolve customer service issues in an efficient and timely manner. " + "Make necessary training and development modifications to assist staff in meeting company’s targeted goal. " + "Actively recruit top talent and maintain both management and sales staff."
   }, {
     "employer": "The Body Shop",
