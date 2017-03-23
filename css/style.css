@@ -2,16 +2,20 @@ body,
 div,
 ul,
 li,
-p,
+p {
+  padding:0;
+  margin:0;
+  font-family: "Inconsolata", "Helvetica Neue", sans-serif;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  padding:0;
-  margin:0;
-  font-family: "Roboto", sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: 'Merriweather', serif;
 }
 .header__menu {
   display: none;
@@ -69,8 +73,12 @@ h1 {
   line-height: 48px;
   display: inline;
 }
-
-
+h2{
+	text-align: center;
+}
+#education{
+	margin-bottom: 1em;
+}
 #projects {
   display: flex;
   flex-wrap: wrap;
@@ -99,20 +107,17 @@ h1 {
   font-size: 14px;
   color: #999;
   line-height: 16px;
-  align: center;
+  text-align: center;
 }
 
 h2 {
   font-size: 1.6em;
-  color: #fff;
   line-height: 29px;
   padding: 10px;
 }
 
 h3 {
-  font-style: italic;
   font-size: 20px;
-  color: #fff;
   line-height: 22px;
 }
 
@@ -148,9 +153,8 @@ h5 {
 }
 
 p {
-  font-size: 14px;
-  color: #333;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 a {
@@ -161,7 +165,6 @@ a {
 
 }
 .aqua-text {
-  color: #9ad3de;
   font-size: 1.4em;
   text-decoration: none;
   margin-top: 10px;
@@ -178,17 +181,11 @@ a {
   color: #1199c3;
 }
 
-.white {
-  background-color: #fff;
-}
 
 .blue-text {
   color: #1199c3;
 }
-.white-text {
-  color: #fff;
-  font-size: 1.2em;
-}
+
 
 .headnav {
   display:inline;
@@ -205,25 +202,13 @@ a {
   line-height: 21px;
 }
 .gray {
-  background-color: #e3e3e3;
   padding-bottom: 10px;
 }
-
-.dark-gray {
-  background-color: #c9c9c9;
-}
-.aqua {
-  background-color: #9ad3de;
-}
-
-.blue {
-  background-color: #89bdd3;
+.educationTitle {
+	text-align: center;
 }
 
 /* TODO: Replace with image later */
-#header {
-  background-color: #c9c9c9;
-}
 
 .flex-box {
   display: flex;
@@ -321,13 +306,14 @@ span {
     z-index: 10;
     background-color: #fff;
     width: 300px;
-    position: absolute;
+    position: fixed;
     /* This trasform moves the drawer off canvas. */
     -webkit-transform: translate(-300px, 0);
     transform: translate(-300px, 0);
     /* Optionally, we animate the drawer. */
     transition: transform 0.3s ease;
     top: 0px;
+
   }
   .nav.open {
     -webkit-transform: translate(0, 0);
@@ -338,6 +324,7 @@ span {
     border-bottom: 1px solid #E0E0E0;
     width: 100%;
     text-align: left;
+
   }
 
   #name {
