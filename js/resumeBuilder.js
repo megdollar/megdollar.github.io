@@ -58,12 +58,12 @@ this.education = {
 this.projects = {
   "projects": [
     {
-      "title": "Animal Trading Card", 
-      "description": "First CSS Project: Animal trading card created to showcase HTML & CSS.",
-      "dates": "June, 2016",
-      "images" : ["images/lorikeet.jpeg"],
-      "view" : "https://megdollar.github.io/Animal-Trading-Card/",
-      "github": "https://github.com/megdollar/Animal-Trading-Card"
+      "title": "Neighborhood Map", 
+      "description": "Utilizing Knockout and third-party APIs I developed this map to learn more about local attractions.",
+      "dates": "January, 2017",
+      "images" : ["images/neighborhood.png"],
+      "view" : "https://megdollar.github.io/Neighborhood_Map/",
+      "github": "https://github.com/megdollar/Neighborhood_Map"
     }, {
       "title": "Portfolio",
       "description": "Responsive Portfolio Project: Single page responsive site showcasing HTML, CSS, & Bootstrap.",
