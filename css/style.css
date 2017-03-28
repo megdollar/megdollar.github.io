@@ -5,7 +5,7 @@ li,
 p {
   padding:0;
   margin:0;
-  font-family: "Inconsolata", "Helvetica Neue", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 h1,
 h2,
@@ -15,7 +15,7 @@ h5,
 h6 {
 	padding: 0;
 	margin: 0;
-	font-family: 'Merriweather', serif;
+  font-family: 'Josefin Slab', serif;
 }
 .header__menu {
   display: none;
