@@ -58,17 +58,17 @@ this.education = {
 this.projects = {
   "projects": [
     {
-      "title": "Neighborhood Map", 
+      "title": "Favorite Destinations API", 
       "description": "Utilizing Knockout and third-party APIs I developed this map to learn more about local attractions.",
       "dates": "January, 2017",
-      "images" : ["images/neighborhood.png"],
+      "images" : ["images/destinations.png"],
       "view" : "https://megdollar.github.io/Neighborhood_Map/",
       "github": "https://github.com/megdollar/Neighborhood_Map"
     }, {
       "title": "Portfolio",
       "description": "Responsive Portfolio Project: Single page responsive site showcasing HTML, CSS, & Bootstrap.",
       "dates": "August, 2016",
-      "images" : ["images/portfolio.png"],
+      "images" : ["images/rwd.png"],
       "view"  : "https://megdollar.github.io/portfolio/",
       "github": "https://github.com/megdollar/portfolio"
     }, {
