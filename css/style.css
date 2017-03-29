@@ -20,7 +20,6 @@ h6 {
 .header__menu {
   display: none;
 }
-
 nav {
   box-sizing: border-box;
 }
@@ -54,7 +53,6 @@ nav {
 
 .nav a:hover {
   text-decoration: underline;
-  color: #212121;
 }
 
 .clear-fix {
@@ -69,7 +67,6 @@ nav {
 
 h1 {
   font-size: 40px;
-  color: #1199c3;
   line-height: 48px;
   display: inline;
 }
@@ -173,12 +170,11 @@ a {
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  color: #333;
   line-height: 28px;
 }
 
-#skills-h3 {
-  color: #1199c3;
+#skills-h3, .tagline {
+  color: #616161;
 }
 
 
