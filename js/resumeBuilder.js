@@ -156,14 +156,14 @@ bioDisplay: function() {
   //display contact info
   var contacts = model.bio.contacts;
   var formattedEmail = HTMLemail.replace("#", contacts.email).replace(data, contacts.email);
-//   var formattedMobile = HTMLmobile.replace(data, contacts.mobile);
+  var formattedMobile = HTMLmobile.replace(data, contacts.mobile);
   var formattedGithub = HTMLgithub.replace("#", contacts.github);
   var formattedLinkedin = HTMLlinkedin.replace("#", contacts.linkedin);
   var formattedLoc = HTMLlocation.replace(data, contacts.location);
   var formattedWelcomeMsg = HTMLwelcomeMsg.replace(data, model.bio.welcomeMessage);
   $("#header").append(formattedWelcomeMsg);
-  $("#topContacts").append(formattedEmail, formattedGithub, formattedLinkedin, formattedLoc);
-  $("#footerContacts").append(formattedEmail, formattedGithub, formattedLinkedin, formattedLoc);
+  $("#topContacts").append(formattedEmail, formattedMobile, formattedGithub, formattedLinkedin, formattedLoc);
+  $("#footerContacts").append(formattedEmail, formattedMobile, formattedGithub, formattedLinkedin, formattedLoc);
 
   //function to display skills
   $("#header").append(HTMLskillsStart);
