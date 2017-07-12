@@ -10,23 +10,28 @@ span
   font-family: 'Open Sans', sans-serif;
   line-height: 1.48;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-.work-emp {
+.work-emp,
+.Uni{
 	padding: 0;
 	margin: 0;
-  font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
+
 .header__menu {
   display: none;
 }
+
 nav {
   box-sizing: border-box;
 }
+
 .nav {
   width: 100%;
   margin-left: auto;
@@ -45,7 +50,6 @@ nav {
   width: 24%;
   text-align: center;
   line-height: 24px;
-  padding: 24px;
   text-transform: uppercase;
 }
 
@@ -63,23 +67,38 @@ nav {
   overflow: auto;
 }
 
-.education-entry,
 .work-entry,
 .project-entry {
   padding: 1% 5%;
 }
 
-h1 {
-  font-size: 32px;
-  line-height: 48px;
-  display: inline;
+.education-entry {
+    padding: 0% 5%;
 }
-h2{
+
+h1 {
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 1.8em;
+}
+
+h2 {
 	text-align: center;
 }
+
 #education, #projects, #workExperience, #mapDiv, #lets-connect{
 	margin-top: 2em;
 }
+
+.Uni, .course {
+    margin-bottom: 10px;
+}
+
+.Uni {
+    margin-top: 10px;
+    font-size: 1.4em
+}
+
 #projects {
   display: flex;
   flex-wrap: wrap;
@@ -95,12 +114,14 @@ h2{
 .example {
   text-align: center;
 }
+
 .project-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
   max-height: 100%;
 }
+
 .project-text {
   font-style: italic;
   font-size: 14px;
@@ -120,7 +141,6 @@ h3 {
 }
 
 h4 {
-  font-weight: bold;
   font-size: 14px;
   color: #c9c9c9;
   line-height: 17px;
@@ -131,7 +151,6 @@ h3,
 h4,
 h5 {
   padding:10px 5%;
-
 }
 
 .date-text {
@@ -139,6 +158,18 @@ h5 {
   font-size: 14px;
   color: #999;
   float: left;
+}
+
+.course {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.date {
+  font-style: italic;
+  font-size: 14px;
+  color: #999;
+  display: inline-block;
 }
 
 .location-text {
@@ -153,44 +184,49 @@ p {
 }
 
 a {
-  color: #1199c3;
+  color: #999;
   text-decoration: none;
   margin-top: 10px;
   display: block;
-
 }
+
 .title-text {
   font-size: 1.4em;
   margin-bottom: 1em;
   font-family: 'Lato', sans-serif;
-
 }
 
 .welcome-message {
   font-size: 1.2em;
 }
 
-#skills-h3, .tagline {
+#skills-h3, .tagline, .blue-text {
   color: #616161;
 }
 
-
-.blue-text {
-  color: #1199c3;
+#skills-h3, .welcome-message {
+    text-align: center;
 }
 
+.tagline {
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
 
 .headnav {
   display:inline;
 }
+
 .work-emp {
   font-size: 1.4em;
 }
+
 .major {
   font-size: 14px;
   color: #333;
   line-height: 21px;
 }
+
 .online-class {
   font-size: 18px;
   color: #333;
@@ -200,8 +236,6 @@ a {
 .educationTitle {
 	text-align: center;
 }
-
-/* TODO: Replace with image later */
 
 .flex-box {
   display: flex;
@@ -213,9 +247,12 @@ a {
 
 .flex-column {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.flex-item {
+    margin: 10px 15px 10px 0px;
 }
 
 .center-content {
@@ -226,22 +263,20 @@ ul {
   list-style-type: none;
 }
 
-
 .biopic {
-  float: left;
-  padding: 10px;
-  width: 200px;
+  position: absolute;
+  right: 5%;
+  top: 10px;
+  width: 90px;
+  height: 115px;
+  border-radius: 25%;
 }
 
-img {
-  width: 300px;
-  height: 300px;
-  max-width: 100%;
-  margin-top: 25px;
-}
-
-span {
-  padding: 5px;
+.project-image {
+    margin-top: 25px;
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
 }
 
 #lets-connect {
@@ -268,26 +303,12 @@ span {
 
 }
 
-@media only screen and (max-width:900px) {
-  .biopic {
-    width: 175px;
-  }
-}
-
-@media only screen and (min-width: 750px) {
-  #skills-h3,
-  .biopic {
-    display: block;
-  }
-}
 
 @media only screen and (max-width: 650px) {
   #projects, .project-entry {
     width: 100%;
   }
-  .example {
-  text-align: justify;
-}
+    
 }
 
 @media screen and (max-width: 550px){
@@ -304,16 +325,17 @@ span {
     top: 0px;
 
   }
+    
   .nav.open {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
   }
+    
   .nav__item {
     display: list-item;
     border-bottom: 1px solid #E0E0E0;
     width: 100%;
     text-align: left;
-
   }
 
   #name {
@@ -321,9 +343,11 @@ span {
     font-size: 2em;
     vertical-align: bottom; 
   }
-  .tagline, .welcome-message, #skills-h3, #skills {
+    
+  .biopic, .welcome-message, #skills-h3, #skills {
     display: none;
   }
+    
   .header__menu {
     display: inline-block;
     position: absolute;
@@ -335,14 +359,9 @@ span {
     width: 32px;
     fill: #E0E0E0;
   }
-  .biopic {
-    max-width: 100%;
-    padding: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }   
+     
+    
   .project-image {
-
     margin-top: 10px;
     margin-bottom: 10px;
   }
