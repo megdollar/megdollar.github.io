@@ -4,7 +4,8 @@ var model = {
 
  this.bio = {
   "name": "Megan Dollar",
-  "role": "Front-end Web Developer",
+  "role": "Web Developer",
+  "biopic": "images/megan.jpg",
   "contacts":
   {
       "email": "megdollar@gmail.com",
@@ -13,28 +14,32 @@ var model = {
       "linkedin": "https://www.linkedin.com/in/megan-dollar-64993643",
       "location": "Decatur, GA",
   },
-  "biopic": "images/megan.jpg",
-  "welcomeMessage": "Hi, I'm Megan Dollar. An independent front-end developer based in Atlanta, GA.",
-  "skills": ["HTML5", "CSS3", "JavaScript", "Front-End Web Development", "jQuery", "Git & GitHub", "Object-Oriented Programming"]
+  "welcomeMessage": "Welcome. I'm a front-end developer from Atlanta, GA. Fast-loading and responsive front-end web development using valid and semantic coding implementations.",
+  "skills": ["HTML5", "CSS3", "JavaScript", "RWD", "jQuery", "KnockoutJS", "Angular", "Git", "Object-Oriented Programming", "Python", "SQL" ]
 };
 
 this.education = {
   "schools": [{
     "name": "Kennesaw State University",
     "location": "Kennesaw, GA",
-    "degree": "BS",
+    "degree": "Bachelor of Science",
     "majors": ["Psychology"],
     "dates": "2009",
     "url": "http://www.kennesaw.edu"
   }],
   "onlineCourses": [{
-    "title": "Front-End Web Development",
+    "title": "Full Stack Web Development",
     "school": "Udacity",
+    "url": "https://www.udacity.com",
+    "dates": "2017"
+  },{
+    "title": "Front-End Web Development",
+    "school": "",
     "url": "https://www.udacity.com",
     "dates": "2016"
   }, {
     "title": "Intro to Programming Nanodegree",
-    "school": "Udacity",
+    "school": "",
     "url": "https://www.udacity.com",
     "dates": "2016"
   }, {
@@ -44,12 +49,12 @@ this.education = {
     "dates": "2015"
   }, {
     "title": "Intro to C#",
-    "school": "Kennesaw State University",
+    "school": "",
     "url": "http://www.kennesaw.edu",
     "dates": "2015"
   }, {
     "title": "Intro to Programming",
-    "school": "Kennesaw State University",
+    "school": "",
     "url": "http://www.kennesaw.edu",
     "dates": "2015"
   }]
@@ -57,11 +62,19 @@ this.education = {
 
 this.projects = {
   "projects": [
+      {
+      "title": "Tiki Quiz",
+      "description": "Created a quiz application using OOJS",
+      "dates": "May, 2017",
+      "images" : ["images/tiki.png"],
+      "view" : "https://megdollar.github.io/TikiApp/", 
+      "github": "https://github.com/megdollar/TikiApp"
+    },
     {
       "title": "Favorite Destinations API", 
       "description": "Utilizing Knockout and third-party APIs I developed this map to learn more about local attractions.",
       "dates": "January, 2017",
-      "images" : ["images/destinations.png"],
+      "images" : ["images/map.png"],
       "view" : "https://megdollar.github.io/Neighborhood_Map/",
       "github": "https://github.com/megdollar/Neighborhood_Map"
     }, {
@@ -78,18 +91,23 @@ this.projects = {
       "images" : ["images/arcade.png"],
       "view"  : "https://megdollar.github.io/Arcade_Game",
       "github": "https://github.com/megdollar/Arcade_Game"
-   }, {
-      "title": "Website Perfomance Optimzation",
-      "description": "Optimized the index and pizzeria for performace perfection",
-      "dates": "November, 2016",
-      "images" : ["images/pizza.png"],
-      "view" : "https://megdollar.github.io/Pizzeria_portfolio/", 
-      "github": "https://github.com/megdollar/Pizzeria_portfolio"
-    }]
+   }]
 };
 
 this.work = {
   "jobs": [{
+    "employer": "Freelance",
+    "title": "Web Developer",
+    "location": "Decatur, GA",
+    "dates": "May 2017 - Present",
+    "description": "Web development and design for individuals and small businesses."
+  },{
+    "employer": "The Hive Solution",
+    "title": "Administrative Assistant",
+    "location": "Decatur, GA",
+    "dates": "April 2017 - Present",
+    "description": "The Hive Solution, Inc. is engaged in a variety of business endeavors related to providing telephone answering, message-taking, appointment scheduling, and bookkeeping support services for entrepreneurs and small businesses."
+  },{
     "employer": "Swarovski",
     "title": "Store Manager",
     "location": "Atlanta, GA",
@@ -132,7 +150,8 @@ bioDisplay: function() {
   var data = "%data%";
   var formattedName = HTMLheaderName.replace(data, model.bio.name);
   var formattedRole = HTMLheaderRole.replace(data, model.bio.role);
-  $("#header").prepend(formattedName, formattedRole);
+  var formattedBiopic = HTMLbioPic.replace(data, model.bio.biopic);
+  $("#header").prepend(formattedName, formattedBiopic, formattedRole);
 
   //display contact info
   var contacts = model.bio.contacts;
@@ -141,11 +160,10 @@ bioDisplay: function() {
   var formattedGithub = HTMLgithub.replace("#", contacts.github);
   var formattedLinkedin = HTMLlinkedin.replace("#", contacts.linkedin);
   var formattedLoc = HTMLlocation.replace(data, contacts.location);
-  var formattedBiopic = HTMLbioPic.replace(data, model.bio.biopic);
   var formattedWelcomeMsg = HTMLwelcomeMsg.replace(data, model.bio.welcomeMessage);
+  $("#header").append(formattedWelcomeMsg);
   $("#topContacts").append(formattedEmail, formattedMobile, formattedGithub, formattedLinkedin, formattedLoc);
   $("#footerContacts").append(formattedEmail, formattedMobile, formattedGithub, formattedLinkedin, formattedLoc);
-  $("#header").append(formattedWelcomeMsg, formattedBiopic);
 
   //function to display skills
   $("#header").append(HTMLskillsStart);
@@ -168,10 +186,10 @@ educationDisplay: function() {
     var formattedDegree = HTMLschoolDegree.replace(data, ed.schools[i].degree);
     $(".education-entry:last").append(formattedName + formattedDegree);
 
-    $(".education-entry:last").append(HTMLschoolDates.replace(data, ed.schools[i].dates));
-    $(".education-entry:last").append(HTMLschoolLocation.replace(data, ed.schools[i].location));
+//    $(".education-entry:last").append(HTMLschoolDates.replace(data, ed.schools[i].dates));
+//    $(".education-entry:last").append(HTMLschoolLocation.replace(data, ed.schools[i].location));
     $(".education-entry:last").append(HTMLschoolMajor.replace(data, ed.schools[i].majors));
-    $(".education-entry:last").append(HTMLonlineURL.replace("#", ed.schools[i].url).replace(data, ed.schools[i].url));
+//    $(".education-entry:last").append(HTMLonlineURL.replace("#", ed.schools[i].url).replace(data, ed.schools[i].url));
   }
     //add online classes
   $("#education").append(HTMLonlineClasses);
@@ -180,10 +198,10 @@ educationDisplay: function() {
 
       var formattedTitle = HTMLonlineTitle.replace(data, model.education.onlineCourses[b].title);
       var formattedSchool = HTMLonlineSchool.replace(data, model.education.onlineCourses[b].school);
-      $(".education-entry:last").append(formattedTitle + formattedSchool);
+      $(".education-entry:last").append(formattedSchool + formattedTitle);
 
       $(".education-entry:last").append(HTMLonlineDates.replace(data, model.education.onlineCourses[b].dates));
-      $(".education-entry:last").append(HTMLonlineURL.replace("#", model.education.onlineCourses[b].url).replace(data, model.education.onlineCourses[b].url));
+//      $(".education-entry:last").append(HTMLonlineURL.replace("#", model.education.onlineCourses[b].url).replace(data, model.education.onlineCourses[b].url));
   }
 },
 
